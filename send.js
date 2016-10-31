@@ -2,8 +2,8 @@ var amqp = require('amqplib/callback_api');
 
 amqp.connect('amqp://admin:xiedaming@localhost', function(err, conn){
   conn.createChannel(function(err,ch) {
-    var q = 'repeater.IN';
-    var msg = 'This is some data';
+    var q = 'hello';
+    var msg = 'Hello world!';
 
   //ch.assertQueue(q, {durable: false});
 
